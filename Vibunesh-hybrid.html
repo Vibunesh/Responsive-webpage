@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Vabster</title>
+       <link rel="stylesheet" href="styles.css">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+       <style>
+        *{
+    margin: 0;
+    padding:0;
+}
+body{
+    padding: 25px;
+    background-color: white;
+    color: #121212;
+    font-size: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+.logo{
+    width: 150px;
+}
+.nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+
+}
+
+.nav-links ul li{
+    display:inline-block;
+    list-style: none;
+    padding:8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+   
+    text-decoration: none;
+    font-size: 20px;
+    color: #607d8b;
+
+
+
+    
+}
+.nav-links ul li a:hover{
+    color:gray;
+    font-size: 20px;
+}
+.text{
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size: 23px;
+  
+}
+.button{
+    display: inline;
+    text-decoration: none;
+   
+    font-size: 13px;
+    border: 1px solid #121212;
+    padding: 12px 34px;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid gray;
+}
+@media(max-width:700px){
+    .text{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        background-color:#607d8b;
+        
+    }
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .header{
+        flex-basis: 31%;
+       
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        transition: 0.5s;
+    }
+    .nav-links ul li a{
+        color:white;
+        border: none;
+    }
+    .nav-links ul li a:hover{
+        color:black;
+    }
+   
+
+}
+.work{
+    width: 85%;
+    
+    text-align: center;
+}
+.work p{
+    margin: 10px 0 35px;
+    font-size: large;
+    line-height: 25px;
+}
+.work h1{
+    margin-left: 170px;
+}
+.para{
+   align-content: center;
+   padding-left: 100px;
+}
+.paraone{
+    align-content: center;
+   padding-left:30px;
+}
+
+
+.content{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding: auto;
+    }
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    p{
+       
+        font-size: 18px;
+        font-weight: 300;
+        
+        padding-top: 20px;
+    }
+    .row{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5%;
+        align-content: center;
+    }
+    .content-col{
+        flex-basis: 31%;
+        background:#607d8b;
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        transition: 0.5s;
+    }
+    .content-col:hover{
+        box-shadow:  2px 2px 6px;
+    }
+    @media(max-width:700px){
+        .row{
+            flex-direction:column;
+        }
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+
+
+
+
+   .contentone{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: auto;
+   }
+   .rowone{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10%;
+    align-content: center;
+   }
+   .content-coltwo{
+    flex-basis: 31%;
+        background:#607d8b;
+        border-radius: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        transition: 0.5s;
+        margin-left: 10px;
+
+   }
+
+    @media(max-width:700px){
+        .rowone{
+            flex-direction:column;
+        }
+    }
+
+
+    .contenttwo{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding: auto;
+    }
+   
+    .rowtwo{
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5%;
+        align-content: center;
+    }
+    .contenttwo-col{
+        flex-basis: 31%;
+        background: #607d8b;
+        border-radius: 10px;
+        padding: 10px 12px;
+        box-sizing: border-box;
+        margin-bottom: 5%;
+        transition: 0.5s;
+    }
+    .contenttwo-col:hover{
+        box-shadow:  2px 2px 6px;
+    }
+  .bot p{
+    margin-right:2px ;
+    position: relative;
+    float: right;
+  }
+   
+    @media(max-width:700px){
+        .rowtwo{
+            flex-direction:column;
+        }
+    }
+    a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 25px;
+        color: #333;
+        background: #fff;
+        text-decoration: none;
+        margin-top: 25px;
+        transition: all 0.3s ease;
+      }
+      a.button:hover {
+        color: #fff;
+        background-color: #607d8b;
+      }
+    .darkmode{
+        background-color: #121212;
+        color: white;
+    }
+
+    button.theme {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 15px;
+        border: none;
+        color: #607d8b;
+        background: #fff;
+        margin-top: 15px;
+        transition: all 0.3s ease;
+      }
+      button.theme:hover {
+        color: #fff;
+        background-color: #607d8b;
+      }
+
+
+
+
+      
+
+       </style>
+    </head>
+    <body>
+        <div class="container"></div>
+        <div class="bubble"></div>
+
+
+
+        <div class="header">
+            <nav>
+            <div class="nav-links">
+
+                <ul>
+                    
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">work process</a></li>
+                    <li><a href="#">testimonials</a></li>
+                    <li><a href="#">pricing table</a></li>
+                    <li><a href="#">blog entries</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><button onclick="dark()" class="theme">Theme</button></li>
+                </ul>
+            
+            </div>
+
+            </nav>
+            <div class="text">
+                <p>Front End developer architects and develops <br>websites and applications using web<br> technologies</p>
+                <a href="#" class="button">Discover  More</a>
+
+            </div>
+        </div>
+        <section class="content">
+            <div class="row">
+                <div class="content-col">
+                    <img src="res.jpg" class="image"> 
+                    <h3>Responsive</h3>
+                    <p>Responsive design is an approach to web page creation that makes use of flexible layouts</p>
+                </div>
+                <div class="content-col">
+                    <img src="ui.jpg" class="image">
+                    <h3>Better UI/UX</h3>
+                    <p>Create user-friendly interface that enable users to understand how to use complex technical products</p>
+                </div>
+                <div class="content-col">
+                    <img src="seo.jpg" class="image">
+                    <h3>SEO</h3>
+                    <p>Search Engine Optimization and is the process used to optimize a websites technical configuration/ content relevance and link popularity so its pages can become easily finable</p>
+                </div>
+
+            </div>
+
+            
+        </section>
+        <section class="work">
+            <h1>work process</h1>
+            <p class="para"> When divided into 5 steps the design process ranges from identifying the problem that the design or product will solve all the way to research, planning, prototyping and more.</p>
+        </section>
+    
+        <section class="contentone">
+            <div class="rowone">
+                <div class="content-coltwo" style="background-color: #455a64;">
+                    <h3>Get Ideas</h3>
+                    <p>You'll figure out the market state</p>
+                </div>
+                <div class="content-coltwo">
+                    <h3>Sketch Up</h3>
+                    <p>Sketch Up the tools like figma</p>
+                </div>
+                <div class="content-coltwo" style="background-color: #455a64;">
+                    <h3>Design</h3>
+                    <p>Construct HTML,CSS,script</p>
+                </div>
+                <div class="content-coltwo">
+                    <h3>Content Creation</h3>
+                    <p>Get the professional content</p>
+                </div>
+                <div class="content-coltwo" style="background-color:#455a64;">
+                    <h3>Launch </h3>
+                    <p>Host in a website to access</p>
+                </div>
+            </div>
+               
+                
+
+        </section>
+        <section class="work">
+            <div class="paraone">
+            <h1>What do they say?</h1>
+            <p>Donec tempus sem non rutrum imperdiet. Lectus orci fringilla nulla at accumsan elit eros a turpis. Ut sagittis tectus libero.</p>
+            </div>
+        
+        </section>
+
+
+        <section class="contenttwo">
+            <div class="rowtwo">
+                <div class="contenttwo-col">
+                    <p>Responsive design is an approach to web page creation that makes use of flexible layouts</p>
+                    <p class="bot">Get the professional<br>content</p>
+                </div>
+                <div class="contenttwo-col">
+                    <p>Create user-friendly interface that enable users to understand how to use complex technical products</p>
+                    <p class="bot">Get the professional<br>content</p>
+                </div>
+                <div class="contenttwo-col">
+                    <p>Search Engine Optimization and is the process used to optimize a websites technical configuration/ content relevance and link popularity so its pages can become easily finable</p>
+                    <p class="bot">Get the professional<br>content</p>
+                </div>
+
+            </div>
+
+            
+        </section>
+        <script>
+            function dark(){
+                var element=document.body;
+                element.classList.toggle("darkmode");
+            }
+        </script>
+
+
+    </body>
+</html>
